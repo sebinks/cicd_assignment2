@@ -22,7 +22,8 @@ pipeline {
                 // Run unit tests
                 script {
                     try {
-                        sh 'mvn clean test surefire-report:report' 
+                        sh 'mvn clean test surefire-report:report'
+                        junit allowEmptyResults: true, testResults: '*/target/surefire-reports/.xml'
                     } catch (err) {
                         currentBuild.result = 'FAILURE'
                         echo 'Unit tests failed!'
