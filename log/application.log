@@ -1,0 +1,176 @@
+2024-04-24 20:04:44.050  WARN 9098 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/sebinsebastian/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/Users/sebinsebastian/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-04-24 20:04:44.068  INFO 9098 --- [main] e.t.l.c.LibraryControllerMockMvcTest     : Starting LibraryControllerMockMvcTest using Java 20.0.2 on Sebins-MacBook-Air.local with PID 9098 (started by sebinsebastian in /Users/sebinsebastian/Documents/CICD/library-app)
+2024-04-24 20:04:44.069  INFO 9098 --- [main] e.t.l.c.LibraryControllerMockMvcTest     : The following 1 profile is active: "dev"
+2024-04-24 20:04:44.432  INFO 9098 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-24 20:04:44.462  INFO 9098 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+2024-04-24 20:04:45.096  INFO 9098 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-24 20:04:45.137  INFO 9098 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-04-24 20:04:45.164  INFO 9098 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-24 20:04:45.256  INFO 9098 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-24 20:04:45.391  INFO 9098 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-24 20:04:45.412  INFO 9098 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-04-24 20:04:45.627  INFO 9098 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-24 20:04:45.632  INFO 9098 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-24 20:04:45.769  WARN 9098 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-24 20:04:45.914  INFO 9098 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-24 20:04:46.099  INFO 9098 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-04-24 20:04:46.099  INFO 9098 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-04-24 20:04:46.100  INFO 9098 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-04-24 20:04:46.115  INFO 9098 --- [main] e.t.l.c.LibraryControllerMockMvcTest     : Started LibraryControllerMockMvcTest in 2.248 seconds (JVM running for 2.855)
+2024-04-24 20:04:46.240  INFO 9098 --- [main] e.t.l.controller.LibraryController       : Updating existing book
+2024-04-24 20:04:46.267  INFO 9098 --- [main] e.t.l.controller.LibraryController       : Book do not exist so creating one
+2024-04-24 20:04:46.325  INFO 9098 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.tus.library.controller.LibraryControllerTest], using SpringBootContextLoader
+2024-04-24 20:04:46.325  INFO 9098 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [edu.tus.library.controller.LibraryControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-04-24 20:04:46.326  INFO 9098 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [edu.tus.library.controller.LibraryControllerTest]: LibraryControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-04-24 20:04:46.327  INFO 9098 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration edu.tus.library.SpringBootRestServiceApplication for test class edu.tus.library.controller.LibraryControllerTest
+2024-04-24 20:04:46.327  INFO 9098 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-04-24 20:04:46.328  INFO 9098 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@47cf65f1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@156f0281, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1e041848, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7097ead6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4c4be9d8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@21dd91da, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1f251bf1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@502b9399, org.springframework.test.context.event.EventPublishingTestExecutionListener@433db56d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@e23af91, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@396ec737, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@35d53cd8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1bed61d2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@8a11a19, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@47393345]
+2024-04-24 20:04:46.342  WARN 9098 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/sebinsebastian/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/Users/sebinsebastian/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-04-24 20:04:46.344  INFO 9098 --- [main] e.t.l.controller.LibraryControllerTest   : Starting LibraryControllerTest using Java 20.0.2 on Sebins-MacBook-Air.local with PID 9098 (started by sebinsebastian in /Users/sebinsebastian/Documents/CICD/library-app)
+2024-04-24 20:04:46.344  INFO 9098 --- [main] e.t.l.controller.LibraryControllerTest   : The following 1 profile is active: "dev"
+2024-04-24 20:04:46.440  INFO 9098 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-24 20:04:46.445  INFO 9098 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2024-04-24 20:04:46.508  INFO 9098 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-24 20:04:46.511  INFO 9098 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-04-24 20:04:46.512  INFO 9098 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-04-24 20:04:46.512  INFO 9098 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-04-24 20:04:46.526  INFO 9098 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-24 20:04:46.526  INFO 9098 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-24 20:04:46.571  WARN 9098 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-24 20:04:46.618  INFO 9098 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-24 20:04:46.707  INFO 9098 --- [main] e.t.l.controller.LibraryControllerTest   : Started LibraryControllerTest in 0.378 seconds (JVM running for 3.447)
+2024-04-24 20:04:46.712  INFO 9098 --- [main] e.t.l.controller.LibraryController       : Book do not exist so creating one
+2024-04-24 20:04:46.716  INFO 9098 --- [main] e.t.l.controller.LibraryController       : Book  exist so skipping creation
+2024-04-24 20:04:46.735  INFO 9098 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-24 20:04:46.735  INFO 9098 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2024-04-24 20:04:46.737  INFO 9098 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-24 20:04:46.738  INFO 9098 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-24 20:04:46.740  INFO 9098 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-24 20:04:46.740  INFO 9098 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2024-04-24 20:04:46.741  INFO 9098 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-04-24 20:04:46.742  INFO 9098 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-04-24 20:06:23.635  WARN 9132 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/sebinsebastian/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/Users/sebinsebastian/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-04-24 20:06:23.649  INFO 9132 --- [main] edu.tus.library.controller.LibraryAppIT  : Starting LibraryAppIT using Java 20.0.2 on Sebins-MacBook-Air.local with PID 9132 (started by sebinsebastian in /Users/sebinsebastian/Documents/CICD/library-app)
+2024-04-24 20:06:23.649  INFO 9132 --- [main] edu.tus.library.controller.LibraryAppIT  : The following 1 profile is active: "dev"
+2024-04-24 20:06:24.143  INFO 9132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-24 20:06:24.180  INFO 9132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2024-04-24 20:06:24.714  INFO 9132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2024-04-24 20:06:24.733  INFO 9132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-24 20:06:24.733  INFO 9132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2024-04-24 20:06:24.826  INFO 9132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-24 20:06:24.826  INFO 9132 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1156 ms
+2024-04-24 20:06:24.865  INFO 9132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-24 20:06:25.157  INFO 9132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-24 20:06:25.170  INFO 9132 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-24 20:06:25.343  INFO 9132 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-24 20:06:25.390  INFO 9132 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2024-04-24 20:06:25.529  INFO 9132 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-24 20:06:25.643  INFO 9132 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-04-24 20:06:26.154  INFO 9132 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-24 20:06:26.161  INFO 9132 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-24 20:06:26.521  WARN 9132 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-24 20:06:27.086  INFO 9132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 53246 (http) with context path ''
+2024-04-24 20:06:27.099  INFO 9132 --- [main] edu.tus.library.controller.LibraryAppIT  : Started LibraryAppIT in 3.718 seconds (JVM running for 4.793)
+2024-04-24 20:06:27.403  INFO 9132 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-24 20:06:27.403  INFO 9132 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-24 20:06:27.404  INFO 9132 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-24 20:06:27.512  INFO 9132 --- [http-nio-auto-1-exec-1] e.t.l.controller.LibraryController       : Book do not exist so creating one
+2024-04-24 20:06:27.718  INFO 9132 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.tus.library.controller.LibraryControllerMockMvcTest], using SpringBootContextLoader
+2024-04-24 20:06:27.719  INFO 9132 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [edu.tus.library.controller.LibraryControllerMockMvcTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-04-24 20:06:27.719  INFO 9132 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [edu.tus.library.controller.LibraryControllerMockMvcTest]: LibraryControllerMockMvcTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-04-24 20:06:27.727  INFO 9132 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration edu.tus.library.SpringBootRestServiceApplication for test class edu.tus.library.controller.LibraryControllerMockMvcTest
+2024-04-24 20:06:27.728  INFO 9132 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-04-24 20:06:27.729  INFO 9132 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4b4efe16, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4aa0ee7c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@148aeed, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@422c8d72, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7e2e756f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33b0b7d8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@77cb5885, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@51aa1c13, org.springframework.test.context.event.EventPublishingTestExecutionListener@5ca28e44, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6a9afc7f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@47388ed9, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@46f358a9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@e6b2e9d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@33af522b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@30e24cc1]
+2024-04-24 20:06:27.751  WARN 9132 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/sebinsebastian/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/Users/sebinsebastian/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-04-24 20:06:27.753  INFO 9132 --- [main] e.t.l.c.LibraryControllerMockMvcTest     : Starting LibraryControllerMockMvcTest using Java 20.0.2 on Sebins-MacBook-Air.local with PID 9132 (started by sebinsebastian in /Users/sebinsebastian/Documents/CICD/library-app)
+2024-04-24 20:06:27.753  INFO 9132 --- [main] e.t.l.c.LibraryControllerMockMvcTest     : The following 1 profile is active: "dev"
+2024-04-24 20:06:27.865  INFO 9132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-24 20:06:27.871  INFO 9132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2024-04-24 20:06:28.055  INFO 9132 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-24 20:06:28.058  INFO 9132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-04-24 20:06:28.059  INFO 9132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-04-24 20:06:28.059  INFO 9132 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-04-24 20:06:28.078  INFO 9132 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-24 20:06:28.078  INFO 9132 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-24 20:06:28.132  WARN 9132 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-24 20:06:28.188  INFO 9132 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-24 20:06:28.297  INFO 9132 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-04-24 20:06:28.297  INFO 9132 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-04-24 20:06:28.298  INFO 9132 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-04-24 20:06:28.308  INFO 9132 --- [main] e.t.l.c.LibraryControllerMockMvcTest     : Started LibraryControllerMockMvcTest in 0.575 seconds (JVM running for 6.003)
+2024-04-24 20:06:28.355  INFO 9132 --- [main] e.t.l.controller.LibraryController       : Updating existing book
+2024-04-24 20:06:28.372  INFO 9132 --- [main] e.t.l.controller.LibraryController       : Book do not exist so creating one
+2024-04-24 20:06:28.443  INFO 9132 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [edu.tus.library.controller.LibraryControllerTest], using SpringBootContextLoader
+2024-04-24 20:06:28.444  INFO 9132 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [edu.tus.library.controller.LibraryControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-04-24 20:06:28.444  INFO 9132 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [edu.tus.library.controller.LibraryControllerTest]: LibraryControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-04-24 20:06:28.445  INFO 9132 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration edu.tus.library.SpringBootRestServiceApplication for test class edu.tus.library.controller.LibraryControllerTest
+2024-04-24 20:06:28.446  INFO 9132 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-04-24 20:06:28.446  INFO 9132 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5c4f2b59, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@48bf4bca, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7a892f9d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@79e4f8b6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5cd41130, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e87f07b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5d41cff1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3beada7, org.springframework.test.context.event.EventPublishingTestExecutionListener@7f9f7171, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2eca42d1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7da72ebe, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@b027738, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@f128bd0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@73328c29, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@37248e2f]
+2024-04-24 20:06:28.461  WARN 9132 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/sebinsebastian/.m2/repository/org/json/json/20160212/json-20160212.jar!/org/json/JSONObject.class
+	jar:file:/Users/sebinsebastian/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-04-24 20:06:28.462  INFO 9132 --- [main] e.t.l.controller.LibraryControllerTest   : Starting LibraryControllerTest using Java 20.0.2 on Sebins-MacBook-Air.local with PID 9132 (started by sebinsebastian in /Users/sebinsebastian/Documents/CICD/library-app)
+2024-04-24 20:06:28.462  INFO 9132 --- [main] e.t.l.controller.LibraryControllerTest   : The following 1 profile is active: "dev"
+2024-04-24 20:06:28.545  INFO 9132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-24 20:06:28.550  INFO 9132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2024-04-24 20:06:28.617  INFO 9132 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-24 20:06:28.621  INFO 9132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-04-24 20:06:28.622  INFO 9132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-04-24 20:06:28.622  INFO 9132 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-04-24 20:06:28.642  INFO 9132 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-24 20:06:28.642  INFO 9132 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-24 20:06:28.695  WARN 9132 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-24 20:06:28.756  INFO 9132 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-04-24 20:06:28.867  INFO 9132 --- [main] e.t.l.controller.LibraryControllerTest   : Started LibraryControllerTest in 0.419 seconds (JVM running for 6.562)
+2024-04-24 20:06:28.874  INFO 9132 --- [main] e.t.l.controller.LibraryController       : Book do not exist so creating one
+2024-04-24 20:06:28.879  INFO 9132 --- [main] e.t.l.controller.LibraryController       : Book  exist so skipping creation
+2024-04-24 20:06:28.996  INFO 9132 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-24 20:06:28.997  INFO 9132 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2024-04-24 20:06:29.001  INFO 9132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-24 20:06:29.004  INFO 9132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-24 20:06:29.006  INFO 9132 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-24 20:06:29.006  INFO 9132 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2024-04-24 20:06:29.007  INFO 9132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-04-24 20:06:29.008  INFO 9132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-04-24 20:06:29.010  INFO 9132 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-24 20:06:29.010  INFO 9132 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2024-04-24 20:06:29.011  INFO 9132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-04-24 20:06:29.013  INFO 9132 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
