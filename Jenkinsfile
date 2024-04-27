@@ -41,7 +41,7 @@ pipeline {
                 }
             }
         }
-        stage('Copy artifact to EC2') {
+        stage('Copy the artifacts to EC2 server') {
             steps {
                 sshPublisher(
                     publishers: [
@@ -110,7 +110,7 @@ pipeline {
         failure {
             // This block will execute if any of the previous stages fail, including unit tests
             echo 'One or more stages have failed!'
-            echo 'Pipeline Aborted'
+            echo 'Pipeline is aborted'
         }
         always {
             echo 'always section'
