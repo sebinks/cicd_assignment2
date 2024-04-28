@@ -1,0 +1,26 @@
+---
+- hosts: local
+  tasks:
+    - name: stop container if its running
+      shell: docker stop app_deploy_cicd
+      ignore_errors: yes
+
+    - name: remove stopped containers
+      shell: docker rm -f app_deploy_cicd
+      ignore_errors: yes
+
+    - name: remove image
+      shell: docker image prune -a --force
+      ignore_errors: yes
+
+    - name: build image
+      shell: docker build -f /opt/deployment/Dockerfile -t app_deploy_cicd .
+
+    - name: run container
+      docker_container:
+        name: app_deploy_cicd
+        image: app_deploy_cicd
+        state: started
+        ports:
+          - "8080:8081"
+...
